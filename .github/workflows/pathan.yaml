@@ -1,1 +1,13 @@
 
+name: My First Action
+on: [push] # This triggers the robot every time you push code
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest # The robot will use a Linux machine
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # This tells the robot to download your code
+
+      - name: Greet the user
+        run: echo "Hello Pathan! Your GitHub Action is working."
