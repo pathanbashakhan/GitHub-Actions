@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathan Mahaboob Basha Khan — DevOps Engineer Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #1e293b;
+    --accent: #2563eb;
+    --text: #334155;
+    --muted: #64748b;
+    --line: #cbd5e1;
+    --bg: #ffffff;
+  }
+  
+  @page {
+    size: letter portrait;
+    margin: 0.4in 0.4in;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.38;
+    font-size: 9.5pt;
+    padding: 24px;
+    max-width: 8.5in;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 18pt;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .contact-info {
+    font-size: 9pt;
+    color: var(--muted);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .contact-info a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  section {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+
+  .summary p {
+    color: var(--text);
+    text-align: justify;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 3px 8px;
+    font-size: 9pt;
+  }
+
+  .skills-label {
+    font-weight: 600;
+    color: var(--primary);
+    white-space: nowrap;
+  }
+
+  .skills-val {
+    color: var(--text);
+  }
+
+  .exp-item {
+    margin-bottom: 6px;
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 10pt;
+  }
+
+  .exp-sub {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    color: var(--accent);
+    font-size: 9pt;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  ul.bullets {
+    padding-left: 14px;
+    margin: 0;
+  }
+
+  ul.bullets li {
+    margin-bottom: 3px;
+    text-align: justify;
+  }
+
+  ul.bullets li strong {
+    color: var(--primary);
+  }
+
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  .edu-date {
+    color: var(--muted);
+    font-size: 8.5pt;
+  }
+
+  .cert-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    font-size: 8.5pt;
+    color: var(--text);
+    margin-top: 3px;
+  }
+
+  .cert-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .cert-item::before {
+    content: "•";
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .no-print {
+    margin-bottom: 16px;
+    text-align: right;
+  }
+
+  .btn-print {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 9pt;
+  }
+
+  @media print {
+    body { padding: 0; margin: 0; max-width: 100%; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+</div>
+
+<header>
+  <h1>Pathan Mahaboob Basha Khan</h1>
+  <div class="subtitle">DevOps Engineer | AWS • EKS • DevSecOps • Observability</div>
+  <div class="contact-info">
+    <span>📍 Bangalore, India</span>
+    <span>📞 +91 - 7997662429</span>
+    <span>✉️ <a href="mailto:mahaboob.khan.2829@gmail.com">mahaboob.khan.2829@gmail.com</a></span>
+  </div>
+</header>
+
+<section class="summary">
+  <h2>Professional Summary</h2>
+  <p>Results-driven <strong>DevOps & DevSecOps Engineer</strong> with hands-on expertise in architecting resilient AWS cloud infrastructure, Kubernetes (EKS) container orchestration, shift-left CI/CD security gating, and GitOps progressive delivery. Demonstrated success provisioning multi-environment IaC with modular Terraform, enforcing zero-trust keyless authentication via AWS STS OIDC, and embedding automated security controls (Gitleaks, Checkov, SonarQube, Trivy) that reduced build times by 40%. Proficient in cloud-native telemetry with AWS ADOT, Prometheus, and Grafana to maintain 99.9% availability targets.</p>
+</section>
+
+<section class="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skills-label">Cloud & IaC:</div>
+    <div class="skills-val">AWS (EC2, EKS, S3, VPC, IAM, RDS, Route 53, EBS CSI, AMP, AMG), Terraform (Modular, Remote S3 State, DynamoDB Locking), Gateway API</div>
+    
+    <div class="skills-label">CI/CD & GitOps:</div>
+    <div class="skills-val">GitHub Actions, Argo CD, Argo Rollouts (Canary & Blue-Green), Jenkins, Helm, Maven, Amazon ECR, Docker Hub</div>
+    
+    <div class="skills-label">Containers & Ingress:</div>
+    <div class="skills-val">Docker (Multi-stage builds), Kubernetes (EKS), AWS ALB/NLB, ExternalDNS Controllers</div>
+    
+    <div class="skills-label">DevSecOps & Security:</div>
+    <div class="skills-val">AWS STS OIDC Federation, IAM IRSA, EKS RBAC, AWS Secrets Manager, Secrets Store CSI Driver, Gitleaks, Checkov, TFLint, SonarQube, Trivy, CycloneDX SBOM</div>
+    
+    <div class="skills-label">Observability:</div>
+    <div class="skills-val">AWS ADOT Collectors (Deployment & DaemonSet), AWS X-Ray, Amazon CloudWatch, Amazon Managed Prometheus (AMP), Amazon Managed Grafana (AMG)</div>
+    
+    <div class="skills-label">Scripting & OS:</div>
+    <div class="skills-val">Python, Bash/Shell Scripting, YAML, Linux (Ubuntu, Amazon Linux, RHEL)</div>
+  </div>
+</section>
+
+<section class="experience">
+  <h2>Professional Experience</h2>
+  
+  <div class="exp-item">
+    <div class="exp-header">
+      <span>Quantiphi Analytics</span>
+      <span>Bangalore, India</span>
+    </div>
+    <div class="exp-sub">
+      <span>DevOps Engineer — Project: Multi-Tier EKS Platform (Client: Rodan & Fields)</span>
+      <span>Dec 2025 – Present</span>
+    </div>
+    <ul class="bullets">
+      <li><strong>Modular AWS IaC Provisioning:</strong> Architected and deployed multi-AZ AWS infrastructure across Dev, QA, and Prod using modular Terraform, featuring custom VPC networks, EKS clusters with EBS CSI drivers for dynamic storage, and S3 remote state storage with DynamoDB locking.</li>
+      <li><strong>Automated Ingress & DNS Management:</strong> Configured high-availability traffic routing using AWS Load Balancers (ALB/NLB), K8s Gateway API, and integrated ExternalDNS with Amazon Route 53 for zero-downtime automated DNS lifecycle updates.</li>
+      <li><strong>Zero-Trust Identity & Secrets:</strong> Eliminated long-lived IAM keys via keyless AWS STS federation in GitHub Actions (OIDC/IRSA). Secured database access (RDS MySQL/PostgreSQL) by mounting dynamic credentials from AWS Secrets Manager using the Secrets Store CSI Driver.</li>
+      <li><strong>Shift-Left DevSecOps Acceleration:</strong> Built automated GitHub Actions CI/CD pipelines with Gitleaks, Checkov, TFLint, SonarQube SAST, and Trivy CVE scanning with CycloneDX SBOM generation, <strong>achieving a 40% build duration reduction</strong> via caching and path-filtered triggers.</li>
+      <li><strong>Progressive GitOps Release Management:</strong> Automated delivery from GitHub using Argo CD and modular Helm charts. Engineered Canary and Blue-Green release strategies with Argo Rollouts, leveraging real-time Prometheus metric health checks to auto-abort rollouts on 5xx error anomalies.</li>
+      <li><strong>Observability & Cost Optimization:</strong> Deployed AWS Distro for OpenTelemetry (ADOT) Collectors on EKS, exporting correlated traces to AWS X-Ray, logs to CloudWatch, and metrics to AMP/AMG. Reduced telemetry costs by filtering noisy probe traces and configuring collector memory limiters.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="education">
+  <h2>Education & Certifications</h2>
+  
+  <div class="edu-item">
+    <span class="edu-title">B.Tech in Mechanical Engineering — Vignan's LARA Institute of Technology & Science</span>
+    <span class="edu-date">2021 – 2025</span>
+  </div>
+  
+  <div style="font-weight: 600; color: var(--primary); font-size: 8.5pt; margin-top: 4px;">Cisco Networking Academy Certifications:</div>
+  <div class="cert-list">
+    <div class="cert-item">CCNAv7: Enterprise Networking, Security & Automation</div>
+    <div class="cert-item">Networking Essentials</div>
+    <div class="cert-item">PCAP: Programming Essentials in Python</div>
+    <div class="cert-item">Introduction to Cybersecurity</div>
+  </div>
+</section>
+
+</body>
+</html>

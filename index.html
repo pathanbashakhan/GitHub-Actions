@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathan Mahaboob Basha Khan — DevOps & DevSecOps Engineer</title>
+  <meta name="description" content="DevOps & DevSecOps Engineer specializing in enterprise AWS Cloud infrastructure, Kubernetes (EKS), automated CI/CD security gating, and GitOps progressive delivery.">
+  <meta name="keywords" content="DevOps Engineer, AWS, EKS, Terraform, DevSecOps, Kubernetes, Argo CD, Argo Rollouts, Prometheus, Grafana, OpenTelemetry">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <span class="brand-dot"></span>
+        <span>PATHAN.DEVOPS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pipeline">DevSecOps</a></li>
+        <li><a href="#canary">Canary Demo</a></li>
+        <li><a href="#work">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙 Dark Mode</button>
+        <a href="#" class="btn-sm btn-open-resume">📄 Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero container" id="about">
+    <div>
+      <div class="hero-badge">⚡ DevOps & DevSecOps Specialist</div>
+      <h1>Pathan Mahaboob <span class="hero-gradient-text">Basha Khan</span></h1>
+      <div class="hero-role">DevOps Engineer at Quantiphi Analytics • AWS & EKS Platform Engineer</div>
+      <p class="hero-bio">Architecting zero-trust AWS cloud infrastructure, shift-left DevSecOps CI/CD guardrails, and GitOps progressive release pipelines with Argo Rollouts & full-stack OpenTelemetry observability.</p>
+      
+      <div class="hero-actions">
+        <a href="#canary" class="btn-primary">🚀 Live Rollout Demo</a>
+        <a href="#" class="btn-secondary btn-open-resume">📄 View 1-Page Resume</a>
+        <a href="mailto:mahaboob.khan.2829@gmail.com" class="btn-secondary">✉️ Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Live Terminal Box -->
+    <aside class="terminal-box" aria-label="Live System Terminal">
+      <div class="terminal-header">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">eks-cluster-prod-us-east-1 ~ zsh</span>
+      </div>
+      <div class="terminal-body" id="term-body">
+        <div class="term-line"><span class="term-prompt">user@quantiphi:~$</span> <span class="term-cmd">kubectl get nodes -o wide</span></div>
+        <div class="term-out">ip-10-0-1-42.ec2.internal   Ready   worker   v1.30.2   EKS-Managed</div>
+        <div class="term-out">ip-10-0-2-89.ec2.internal   Ready   worker   v1.30.2   EKS-Managed</div>
+        <div class="term-line"><span class="term-prompt">user@quantiphi:~$</span> <span class="term-cmd">argocd rollout status rollout/microservice-api</span></div>
+        <div class="term-out term-success">✔ Rollout microservice-api: Canary 10% healthy. Metric Analysis PASSED.</div>
+        <div class="term-line"><span class="term-prompt">user@quantiphi:~$</span> <span class="term-cmd">trivy image --severity CRITICAL microservice:latest</span></div>
+        <div class="term-out term-success">✔ Total Vulnerabilities: 0 Critical, 0 High (CycloneDX SBOM exported)</div>
+        <div class="term-line"><span class="term-prompt">user@quantiphi:~$</span> <span class="term-cmd">adot-collector status</span></div>
+        <div class="term-out term-success">✔ ADOT DaemonSet active. Metrics -> AMP | Traces -> X-Ray</div>
+      </div>
+    </aside>
+  </header>
+
+  <!-- Key Metrics Bar -->
+  <section class="container" style="border:none; padding: 1rem 0 3rem;">
+    <div class="metrics-bar">
+      <div class="metric-card">
+        <div class="metric-val">40%</div>
+        <div class="metric-label">CI/CD Build Time Acceleration (Caching & Path Triggers)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">99.9%</div>
+        <div class="metric-label">Uptime Target with Full-Stack ADOT Observability</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">0</div>
+        <div class="metric-label">Long-Lived Access Keys (AWS STS OIDC Keyless Auth)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">3</div>
+        <div class="metric-label">Managed Environments (Dev, QA, Production on Terraform)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DevSecOps Pipeline Visualizer -->
+  <section id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shift-Left DevSecOps Pipeline</h2>
+        <p>Automated security guardrails integrated directly into GitHub Actions CI/CD workflows.</p>
+      </div>
+
+      <div class="pipeline-card">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <h3>Automated CI Security Gating & SBOM Generation</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Simulate the multi-stage security pipeline scanning microservices before artifact registry push.</p>
+          </div>
+          <button id="run-pipeline" class="btn-primary">▶ Run DevSecOps Pipeline Test</button>
+        </div>
+
+        <div class="pipeline-steps">
+          <div class="pipe-step" id="step-0">
+            <div class="pipe-status-icon">1</div>
+            <h4>Gitleaks</h4>
+            <span>Secret Detection</span>
+          </div>
+          <div class="pipe-step" id="step-1">
+            <div class="pipe-status-icon">2</div>
+            <h4>Checkov / TFLint</h4>
+            <span>IaC Compliance</span>
+          </div>
+          <div class="pipe-step" id="step-2">
+            <div class="pipe-status-icon">3</div>
+            <h4>SonarQube</h4>
+            <span>SAST Code Scan</span>
+          </div>
+          <div class="pipe-step" id="step-3">
+            <div class="pipe-status-icon">4</div>
+            <h4>Trivy & SBOM</h4>
+            <span>CVE & SBOM Scan</span>
+          </div>
+          <div class="pipe-step" id="step-4">
+            <div class="pipe-status-icon">5</div>
+            <h4>Docker & ECR</h4>
+            <span>Multi-Stage Build</span>
+          </div>
+          <div class="pipe-step" id="step-5">
+            <div class="pipe-status-icon">6</div>
+            <h4>Argo CD</h4>
+            <span>GitOps Cluster Sync</span>
+          </div>
+        </div>
+
+        <div class="canary-log" id="pipe-output" style="min-height: 100px;">
+          <p style="color: var(--text-muted)">Click "Run DevSecOps Pipeline Test" above to trigger automated security scanning visualizer...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Argo Rollouts Canary Simulator -->
+  <section id="canary">
+    <div class="container">
+      <div class="section-header">
+        <h2>GitOps Progressive Delivery</h2>
+        <p>Interactive Argo Rollouts Canary Release Simulator with real-time Prometheus automated metrics analysis.</p>
+      </div>
+
+      <div class="canary-box">
+        <div class="canary-header">
+          <div>
+            <h3>Argo Rollouts Canary Engine</h3>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Automated traffic shifting based on live health checks and 5xx error rate monitoring.</p>
+          </div>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+            <button id="anomaly-toggle" class="btn-secondary" style="font-size:0.85rem;">🧪 Inject 5xx Anomaly (Test Auto-Rollback)</button>
+            <button id="run-rollout" class="btn-primary" style="font-size:0.85rem;">▶ Replay Rollout</button>
+            <button id="reset-rollout" class="btn-secondary" style="font-size:0.85rem;">🔄 Reset</button>
+          </div>
+        </div>
+
+        <div class="traffic-split-bar" aria-label="Traffic Distribution">
+          <div id="stable-split" class="split-stable" style="width: 100%;">Stable v1.4.0 (100%)</div>
+          <div id="canary-split" class="split-canary" style="width: 0%;"></div>
+        </div>
+
+        <div class="canary-log" id="canary-log">
+          <p>[SYSTEM] Ready for Canary Rollout execution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Experience</h2>
+        <p>Production engineering, AWS cloud architecture, and GitOps deployments.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-card-header">
+            <div>
+              <h3 class="work-title">Quantiphi Analytics — DevOps Engineer</h3>
+              <div style="color:var(--text-muted); font-size:0.95rem; margin-top:0.2rem;">Client: Rodan and Fields | Location: Bangalore, India</div>
+            </div>
+            <div class="work-meta">Dec 2025 – Present</div>
+          </div>
+
+          <h4 style="color:var(--accent-blue); margin-bottom:0.75rem;">Project: Multi-Tier EKS Microservices Platform with DevSecOps & GitOps Delivery</h4>
+          
+          <ul class="work-bullets">
+            <li><strong>Modular IaC Architecture:</strong> Provisioned AWS infrastructure across Dev, QA, and Prod environments using modular Terraform: multi-AZ VPCs, private/public subnets, EC2 compute, EKS clusters with dynamic EBS CSI persistent volumes, and S3 remote state with DynamoDB locking.</li>
+            <li><strong>Traffic Routing & Ingress:</strong> Engineered high-availability Kubernetes ingress using AWS Load Balancers (ALB/NLB), Kubernetes Gateway API, and ExternalDNS integrated with Amazon Route 53 for zero-downtime DNS updates.</li>
+            <li><strong>Zero-Trust Security & Secrets:</strong> Enforced keyless AWS STS federation in GitHub Actions via OIDC and IRSA. Mounted dynamic database credentials from AWS Secrets Manager to RDS (MySQL/PostgreSQL) via Secrets Store CSI Drivers.</li>
+            <li><strong>Shift-Left DevSecOps:</strong> Built GitHub Actions CI pipelines for Java (Maven) and Python microservices with multi-stage Docker builds. Integrated Gitleaks, Checkov, TFLint, SonarQube, Trivy CVE scanning, and CycloneDX SBOM generation—cutting build times by 40% via caching.</li>
+            <li><strong>Progressive GitOps Release:</strong> Automated continuous delivery using Argo CD and modular Helm charts. Implemented Argo Rollouts Canary and Blue-Green deployments with Prometheus automated metric health checks that automatically abort rollouts on 5xx error spikes.</li>
+            <li><strong>Full-Stack Observability:</strong> Deployed AWS Distro for OpenTelemetry (ADOT) Collectors (Deployment & DaemonSet modes) exporting traces to AWS X-Ray, logs to CloudWatch, and cluster metrics to Amazon Managed Prometheus (AMP) & Managed Grafana (AMG). Reduced telemetry costs via noise filtering & memory limiters.</li>
+          </ul>
+
+          <div class="tag-cloud">
+            <span class="tag">AWS EKS</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">Argo CD</span>
+            <span class="tag">Argo Rollouts</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">DevSecOps</span>
+            <span class="tag">OIDC & IRSA</span>
+            <span class="tag">Secrets Manager</span>
+            <span class="tag">SonarQube</span>
+            <span class="tag">Trivy SBOM</span>
+            <span class="tag">ADOT</span>
+            <span class="tag">Prometheus & Grafana</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Filter Matrix -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Technical Core Matrix</h2>
+        <p>Comprehensive stack across Cloud, DevSecOps, Observability, and Orchestration.</p>
+      </div>
+
+      <div class="skills-filter">
+        <button class="filter-btn active" data-cat="all">All Stack</button>
+        <button class="filter-btn" data-cat="cloud">Cloud & IaC</button>
+        <button class="filter-btn" data-cat="cicd">CI/CD & GitOps</button>
+        <button class="filter-btn" data-cat="containers">Containers</button>
+        <button class="filter-btn" data-cat="security">DevSecOps</button>
+        <button class="filter-btn" data-cat="observability">Observability</button>
+      </div>
+
+      <div class="skills-cards-grid">
+        <div class="skill-box" data-cat="cloud">
+          <h3>☁️ Cloud & IaC</h3>
+          <p>AWS (EC2, EKS, S3, VPC, IAM, RDS, Route 53, EBS CSI, AMP, AMG), Terraform (Modular, S3 Remote State, DynamoDB Locking), Kubernetes Gateway API.</p>
+        </div>
+        <div class="skill-box" data-cat="cicd">
+          <h3>⚡ CI/CD & GitOps</h3>
+          <p>GitHub Actions, Argo CD, Argo Rollouts (Canary & Blue-Green), Jenkins, Maven, Helm, Amazon ECR, Docker Hub.</p>
+        </div>
+        <div class="skill-box" data-cat="containers">
+          <h3>🐳 Containers & Ingress</h3>
+          <p>Docker (Multi-stage builds), Kubernetes (EKS), AWS ALB/NLB Ingress Controllers, ExternalDNS, EBS CSI Driver.</p>
+        </div>
+        <div class="skill-box" data-cat="security">
+          <h3>🔒 DevSecOps & Security</h3>
+          <p>AWS STS OIDC Federation, IRSA, EKS RBAC, AWS Secrets Manager, Secrets Store CSI, SonarQube, Trivy, Gitleaks, Checkov, TFLint, CycloneDX SBOM.</p>
+        </div>
+        <div class="skill-box" data-cat="observability">
+          <h3>📊 Cloud Observability</h3>
+          <p>AWS ADOT Collectors (Deployment & DaemonSet), AWS X-Ray, Amazon CloudWatch, Amazon Managed Prometheus (AMP), Amazon Managed Grafana (AMG).</p>
+        </div>
+        <div class="skill-box" data-cat="cloud">
+          <h3>🐍 Scripting & OS</h3>
+          <p>Python, Bash/Shell Scripting, YAML, Linux Administration (Ubuntu, Amazon Linux, RHEL).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2>Education & Certifications</h2>
+        <p>Academic foundation and professional Cisco Networking credentials.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="work-card">
+          <h3>🎓 Bachelor of Technology (B.Tech)</h3>
+          <p style="color:var(--accent-blue); font-weight:600; margin: 0.5rem 0;">Mechanical Engineering</p>
+          <p style="color:var(--text-muted); font-size:0.9rem;">Vignan's LARA Institute of Technology & Science, Vadlamudi, Guntur</p>
+          <div style="color:var(--accent-cyan); font-weight:600; font-size:0.85rem; margin-top:0.75rem;">Graduation Year: 2021 – 2025</div>
+        </div>
+
+        <div class="work-card">
+          <h3>📜 Cisco Networking Academy</h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1rem;">Verified Network Infrastructure & Security Credentials</p>
+          <div style="display:grid; gap:0.5rem; font-size:0.9rem; color:var(--text-main);">
+            <div>🔹 <strong>CCNAv7:</strong> Enterprise Networking, Security & Automation</div>
+            <div>🔹 <strong>Networking Essentials</strong> — Cisco Networking Academy</div>
+            <div>🔹 <strong>PCAP:</strong> Programming Essentials in Python</div>
+            <div>🔹 <strong>Introduction to Cybersecurity</strong> — Cisco Networking Academy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Modal -->
+  <section id="contact" style="background:var(--bg-secondary);">
+    <div class="container" style="text-align:center;">
+      <h2>Let's Connect</h2>
+      <p style="color:var(--text-muted); max-width:32rem; margin:1rem auto 2rem;">Open to discussions regarding DevOps, DevSecOps, Cloud Infrastructure, and Platform Engineering opportunities.</p>
+      <a href="mailto:mahaboob.khan.2829@gmail.com" class="btn-primary" style="font-size:1.1rem; padding: 0.85rem 2rem;">✉️ Email Mahaboob Khan</a>
+    </div>
+  </section>
+
+  <!-- Interactive Resume Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom:1px solid var(--border-color); padding-bottom:0.75rem;">
+        <h3>Pathan Mahaboob Basha Khan — 1-Page ATS Resume</h3>
+        <a href="resume/Pathan_Mahaboob_Basha_Khan_DevOps_Resume.html" target="_blank" class="btn-primary" style="padding:0.4rem 1rem; font-size:0.85rem;">🖨️ Open Printable HTML Resume</a>
+      </div>
+      <iframe src="resume/Pathan_Mahaboob_Basha_Khan_DevOps_Resume.html" style="width:100%; height:550px; border:none; background:#ffffff; border-radius:var(--radius-sm);"></iframe>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      Pathan Mahaboob Basha Khan — DevOps Engineer | Built with Vanilla HTML/CSS/JS (Zero External Dependencies)
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
